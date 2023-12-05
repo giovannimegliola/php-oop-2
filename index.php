@@ -1,16 +1,15 @@
 <?php 
 include __DIR__.'/Views/header.php';
 include __DIR__.'/Model/Movie.php';
+$movies = Movie::fetchAll();
 ?>
 
 <section class="container">
   <h2>Movies List</h2>
-  <div class="row gy-4 ">
+  <div class="row gy-4">
     <?php foreach ($movies as $movie){
-      $movie -> printCard();
-      // var_dump($movie);
-    }       
-    ?> 
+      $movie->printCard();
+    }?> 
   </div>
 </section>
 
