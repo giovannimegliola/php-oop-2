@@ -1,7 +1,7 @@
 </main>
   
   <footer class="container">
-    footer
+    Visit our <a href="index.php">Store Online</a>
   </footer>
 
 </body>
