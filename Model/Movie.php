@@ -1,7 +1,7 @@
 <?php
 include __DIR__ ."/Genre.php";
 include __DIR__ ."/Product.php";
-class Movie 
+class Movie extends Product
 {
   private int $id;
   private string $title;
@@ -68,7 +68,7 @@ class Movie
         $moviegenres[] = $rand_genre;
       }
 
-      $movies[] = new Movie($item['id'],$item['title'],$item['overview'],$item['vote_average'],$item['original_language'],$item['poster_path'],$rand_genre); 
+      $movies[] = new Movie($item['id'],$item['title'],$item['overview'],$item['vote_average'],$item['original_language'],$item['poster_path'],$moviegenres); 
     }
     return $movies;
   }
