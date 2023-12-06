@@ -24,7 +24,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="container py-4">
       <h1 class="text-center py-4">OOP Shop</h1>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
