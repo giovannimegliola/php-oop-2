@@ -47,6 +47,18 @@ class Movie extends Product
 
   public function printCard()
   {
+
+    // $error = '';
+    // if (ceil($this->vote_average) < 6) {
+    //   try {
+    //     $this-> setDiscount(20);
+    //   } catch (Exception $e) {
+    //     $error = 'Eccezione:' .  $e->getMessage();
+    //   }
+    // }
+
+
+
     $image = $this -> poster_path;
     $title = $this -> title;
     $content = substr($this->overview, 0 , 100) . '...';
