@@ -10,7 +10,7 @@ class Book extends Product
   private string $genre;
 
 
-  function __construct($id, $title, $description, $pages, $image,$genre)
+  function __construct($id, $title, $description, $pages, $image, $genre)
   {
     $this->_id = $id;
     $this->title = $title;
